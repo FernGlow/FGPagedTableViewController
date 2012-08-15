@@ -59,4 +59,10 @@
  */
 - (void)requestPage:(NSUInteger)pageNumber completion:(void (^)(NSDictionary *pageDictionary))completion;
 
+
+/**
+ Returns whether or not there is a currently active request (readonly)
+ */
+@property (nonatomic, assign, readonly, getter = isRequestActive) BOOL requestActive;
+
 @end

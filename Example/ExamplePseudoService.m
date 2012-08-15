@@ -27,6 +27,7 @@
 @interface ExamplePseudoService ()
 @property (nonatomic, strong) NSMutableArray *objects;
 @property (nonatomic, assign) NSInteger resultsPerPage;
+@property (nonatomic, assign, readwrite, getter = isRequestActive) BOOL requestActive;
 @end
 
 @implementation ExamplePseudoService
@@ -38,6 +39,7 @@
 		_simulatedLatency = 2.0;
 		_resultsPerPage = numberOfResultsPerPage;
 		_objects = [@[] mutableCopy];
+		_requestActive = NO;
 		for (NSInteger i = 1; i <= totalNumberOfResults; i++) {
 			[_objects addObject:[NSString stringWithFormat:@"Object #%d", i]];
 		}
