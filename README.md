@@ -1,4 +1,4 @@
-FGPagedTableViewController is a [UITableViewController](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewController_Class/Reference/Reference.html) subclass that adds status message and paging functionality. It was modeled after Apple's server-side search functionality in the iOS Mail app.
+[FGPagedTableViewController](http://fernglow.github.com/FGPagedTableViewController/Documentation/html/Classes/FGPagedTableViewController.html) is a [UITableViewController](http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewController_Class/Reference/Reference.html) subclass that adds status message and paging functionality. It was modeled after Apple's server-side search functionality in the iOS Mail app.
 
 ## FGPagedTableViewController In Action
 
@@ -22,14 +22,14 @@ FGPagedTableViewController is a [UITableViewController](http://developer.apple.c
 For simplicity, the following design is used:
 
 - Section 1 of the table view contains the status cells (automatically provided)
-- Section 2 of the table view contains the result cells (the cells your [FGPagedTableViewControllerDataSource](http://fernglow.github.com/FGPagedTableViewController/Documentation/Protocols/FGPagedTableViewControllerDataSource.html) provides)
+- Section 2 of the table view contains the result cells (the cells your [FGPagedTableViewControllerDataSource](http://fernglow.github.com/FGPagedTableViewController/Documentation/html/Protocols/FGPagedTableViewControllerDataSource.html) provides)
 - Section 3 of the table view contains the paging cells (automatically provided)
 
 Because of the current design, multi-section table view's are not supported. I encourage pull requests for an improved design that supports this.
 
 ### Important
 
-You do not need to, and shouldn't, implement any of the following UITableView data source or delegate methods as they are all handled by the FGPagedTableViewController class:
+You do not need to, and shouldn't, implement any of the following UITableView data source or delegate methods as they are all handled by the [FGPagedTableViewController](http://fernglow.github.com/FGPagedTableViewController/Documentation/html/Classes/FGPagedTableViewController.html) class:
 
 - [-tableView:cellForRowAtIndexPath:](http://developer.apple.com/library/ios/documentation/uikit/reference/UITableViewDataSource_Protocol/Reference/Reference.html#//apple_ref/occ/intfm/UITableViewDataSource/tableView:cellForRowAtIndexPath:)
 - [-numberOfSectionsInTableView:](http://developer.apple.com/library/ios/documentation/uikit/reference/UITableViewDataSource_Protocol/Reference/Reference.html#//apple_ref/occ/intfm/UITableViewDataSource/numberOfSectionsInTableView:)

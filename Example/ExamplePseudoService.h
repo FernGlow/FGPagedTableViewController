@@ -30,7 +30,7 @@
  */
 
 /**
- Simulated latency (round-trip) in seconds
+ Simulated latency (round-trip) in seconds.
  
  The default simulated latency is 2.0 seconds
  */
@@ -42,7 +42,7 @@
  */
 
 /**
- Initialize the service
+ Initialize the service.
  @param totalNumberOfResults The total number of results returned by the service
  @param numberOfResultsPerPage The number of results contained in each page returned by the service
  */
@@ -53,7 +53,7 @@
  */
 
 /**
- Request a page from the service
+ Request a page from the service.
  @param pageNumber The page number of results to return
  @param completion A block to execute when the page is returned
  */
@@ -61,7 +61,7 @@
 
 
 /**
- Returns whether or not there is a currently active request (readonly)
+ Returns whether or not there is a currently active request. (read-only)
  */
 @property (nonatomic, assign, readonly, getter = isRequestActive) BOOL requestActive;
 
