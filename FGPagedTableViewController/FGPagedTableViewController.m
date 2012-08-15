@@ -162,6 +162,7 @@
 {
 	FGStatusTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"FGStatusTableViewCell"];
 	cell.cellType = statusCellType;
+	self.statusCell = cell;
 	return cell;
 }
 
@@ -169,6 +170,7 @@
 {
 	FGPagingTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"FGPagingTableViewCell"];
 	cell.cellType = pagedCellType;
+	self.pagingCell = cell;
 	return cell;
 }
 
