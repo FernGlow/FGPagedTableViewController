@@ -52,21 +52,6 @@
 
 #pragma mark - Paging
 
-- (void)updatePagingIfNeeded
-{
-	BOOL shouldAddPagingCell = (self.pageInfo.currentPageNumber < self.pageInfo.numberOfPages) && self.pagingCell.cellType == FGPagingCellTypeNone;
-	BOOL shouldReloadPagingCell = (self.pageInfo.currentPageNumber < self.pageInfo.numberOfPages) && self.pagingCell.cellType != FGPagingCellTypeNone;
-	BOOL shouldDeletePagingCell = (self.pageInfo.currentPageNumber == self.pageInfo.numberOfPages) && self.pagingCell.cellType != FGPagingCellTypeNone;
-	
-	if (shouldAddPagingCell) {
-		[self showPagingCellWithType:FGPagingCellTypeContinue];
-	} else if (shouldReloadPagingCell) {
-		[self reloadPagingCell];
-	} else if (shouldDeletePagingCell) {
-		[self removePagingCell];
-	}
-}
-
 - (void)setPageInfo:(FGPageInfo *)pageInfo
 {
 	_pageInfo = pageInfo;
@@ -78,6 +63,14 @@
  Status Cell
  */
 #pragma mark - Status Cell
+
+- (FGStatusTableViewCell *)statusCellWithType:(FGStatusCellType)statusCellType
+{
+	FGStatusTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"FGStatusTableViewCell"];
+	cell.cellType = statusCellType;
+	self.statusCell = cell;
+	return cell;
+}
 
 - (void)updateStatusIfNeeded
 {
@@ -108,6 +101,29 @@
  */
 #pragma mark - Paging Cell
 
+- (FGPagingTableViewCell *)pagingCellWithType:(FGPagingCellType)pagedCellType
+{
+	FGPagingTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"FGPagingTableViewCell"];
+	cell.cellType = pagedCellType;
+	self.pagingCell = cell;
+	return cell;
+}
+
+- (void)updatePagingIfNeeded
+{
+	BOOL shouldAddPagingCell = (self.pageInfo.currentPageNumber < self.pageInfo.numberOfPages) && self.pagingCell.cellType == FGPagingCellTypeNone;
+	BOOL shouldReloadPagingCell = (self.pageInfo.currentPageNumber < self.pageInfo.numberOfPages) && self.pagingCell.cellType != FGPagingCellTypeNone;
+	BOOL shouldDeletePagingCell = (self.pageInfo.currentPageNumber == self.pageInfo.numberOfPages) && self.pagingCell.cellType != FGPagingCellTypeNone;
+	
+	if (shouldAddPagingCell) {
+		[self showPagingCellWithType:FGPagingCellTypeContinue];
+	} else if (shouldReloadPagingCell) {
+		[self reloadPagingCell];
+	} else if (shouldDeletePagingCell) {
+		[self removePagingCell];
+	}
+}
+
 - (void)showPagingCellWithType:(FGPagingCellType)type
 {
 	self.pagingCell.cellType = type;
@@ -121,11 +137,6 @@
 		self.pagingCell.cellType = FGPagingCellTypeNone;
 		[self.tableView deleteRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:FGPagedTableViewSectionPaging]] withRowAnimation:UITableViewRowAnimationAutomatic];
 	}
-}
-
-- (void)setPagingCellWithType:(FGPagingCellType)type
-{
-	self.pagingCell.cellType = type;
 }
 
 - (void)reloadPagingCell
@@ -158,22 +169,6 @@
     return 0;
 }
 
-- (FGStatusTableViewCell *)statusCellWithType:(FGStatusCellType)statusCellType
-{
-	FGStatusTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"FGStatusTableViewCell"];
-	cell.cellType = statusCellType;
-	self.statusCell = cell;
-	return cell;
-}
-
-- (FGPagingTableViewCell *)pagingCellWithType:(FGPagingCellType)pagedCellType
-{
-	FGPagingTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"FGPagingTableViewCell"];
-	cell.cellType = pagedCellType;
-	self.pagingCell = cell;
-	return cell;
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	if (indexPath.section == FGPagedTableViewSectionStatus) {
@@ -193,17 +188,8 @@
 			return [self.pagingDataSource pagedTableView:tableView resultCellForRowAtIndexPath:indexPath];
 		}
 	}
-
-	return nil;
-}
-
-- (NSInteger)numberOfResultsInDataSource
-{
-	if ([self.pagingDataSource respondsToSelector:@selector(numberOfRowsInPagedData)]) {
-		return [self.pagingDataSource numberOfRowsInPagedData];
-	}
 	
-	return 0;
+	return nil;
 }
 
 #pragma mark - Table view delegate
@@ -212,10 +198,21 @@
 {
 	BOOL isPagingCell = [tableView cellForRowAtIndexPath:indexPath].tag == FGPagingCellTypeContinue;
 	if (isPagingCell && [self.pagingDelegate respondsToSelector:@selector(pagedTableView:didSelectPagingCellForRowAtIndexPath:)]) {
-		[self setPagingCellWithType:FGPagingCellTypeRetrieving];
+		self.pagingCell.cellType = FGPagingCellTypeRetrieving;
 		[self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:FGPagedTableViewSectionPaging]] withRowAnimation:UITableViewRowAnimationAutomatic];
 		[self.pagingDelegate pagedTableView:tableView didSelectPagingCellForRowAtIndexPath:indexPath];
 	}
+}
+
+#pragma mark - Convenience
+
+- (NSInteger)numberOfResultsInDataSource
+{
+	if ([self.pagingDataSource respondsToSelector:@selector(numberOfRowsInPagedData)]) {
+		return [self.pagingDataSource numberOfRowsInPagedData];
+	}
+	
+	return 0;
 }
 
 @end

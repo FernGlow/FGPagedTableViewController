@@ -125,7 +125,6 @@
 		}];
 
 		self.pageInfo = pageInfo;
-
 	}];
 }
 
