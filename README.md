@@ -17,13 +17,35 @@ FGPagedTableViewController is a [UITableViewController](http://developer.apple.c
 
 ## Getting Started
 
-### Subclass the controller and adopt the delegate and data source protocols
+### Limitations
+
+For simplicity, the following design is used:
+
+- Section 1 of the table view contains the status cells (automatically provided)
+- Section 2 of the table view contains the result cells (the cells your [FGPagedTableViewControllerDataSource](http://fernglow.github.com/FGPagedTableViewController/Documentation/Protocols/FGPagedTableViewControllerDataSource.html) provides)
+- Section 3 of the table view contains the paging cells (automatically provided)
+
+Because of the current design, multi-section table view's are not supported. I encourage pull requests for an improved design that supports this.
+
+### Important
+
+You do not need to, and shouldn't, implement any of the following UITableView data source or delegate methods as they are all handled by the FGPagedTableViewController class:
+
+- [-tableView:cellForRowAtIndexPath:](http://developer.apple.com/library/ios/documentation/uikit/reference/UITableViewDataSource_Protocol/Reference/Reference.html#//apple_ref/occ/intfm/UITableViewDataSource/tableView:cellForRowAtIndexPath:)
+- [-numberOfSectionsInTableView:](http://developer.apple.com/library/ios/documentation/uikit/reference/UITableViewDataSource_Protocol/Reference/Reference.html#//apple_ref/occ/intfm/UITableViewDataSource/numberOfSectionsInTableView:)
+- [-tableView:numberOfRowsInSection:](http://developer.apple.com/library/ios/documentation/uikit/reference/UITableViewDataSource_Protocol/Reference/Reference.html#//apple_ref/occ/intfm/UITableViewDataSource/tableView:numberOfRowsInSection:)
+
+If you call any of the following data source or delegate methods, you must remember to call super's implementation:
+
+- [– tableView:didSelectRowAtIndexPath:](http://developer.apple.com/library/ios/documentation/uikit/reference/UITableViewDelegate_Protocol/Reference/Reference.html#//apple_ref/occ/intfm/UITableViewDelegate/tableView:didSelectRowAtIndexPath:)
+
+### 1. Subclass the controller and adopt the delegate and data source protocols
 
 ```objective-c
 @interface ExamplePagedTableViewController : FGPagedTableViewController <FGPagedTableViewControllerDelegate, FGPagedTableViewControllerDataSource>
 ```
 
-### Implement the required delegate and data source methods
+### 2. Implement the required delegate and data source methods
 
 ```objective-c
 - (UITableViewCell *)pagedTableView:(UITableView *)tableView resultCellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -44,7 +66,7 @@ FGPagedTableViewController is a [UITableViewController](http://developer.apple.c
 }
 ```
 
-### Update the pageInfo object after you receive new data
+### 3. Update the pageInfo object after you receive new data for the table view
 
 ```objective-c
 // Create a new PageInfo instance
@@ -65,7 +87,11 @@ Read the [full documentation](http://fernglow.github.com/FGPagedTableViewControl
 
 ## Requirements
 
-FGPagedTableViewController uses ARC and modern Objective-C features such as auto-synthesize, literals and subscripting. Thus, it must be compiled with Apple LLVM 4.0+.
+FGPagedTableViewController uses ARC and modern Objective-C features such as auto-synthesize, literals and subscripting. Because of this, it must be compiled with Apple LLVM 4.0+.
+
+## Contributions
+
+Feel free to fork and submit pull requests. This project is very early in development and I'm open to any improvements.
 
 ## License
 
