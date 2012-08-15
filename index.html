@@ -23,7 +23,7 @@
     <script type="text/javascript" src="/javascripts/fancybox/source/jquery.fancybox.pack.js?v=2.0.6"></script>
     
     <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.2" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/javascripts/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.2" type="text/css" media="screen" />
     <script type="text/javascript" src="/javascripts/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.2"></script>
     <script type="text/javascript" src="/javascripts/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.0"></script>
     
@@ -32,6 +32,12 @@
     
   </head>
   <body>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".fancybox").fancybox();
+    });
+  </script>
+      
     <div class="wrapper">
       <header>
         <h1>FGPagedTableViewController</h1>
@@ -58,9 +64,9 @@
 <th>Paging in Progress</th>
   </tr>
 <tr>
-<td><a class="fancybox" rel="group" href="/img/FGPagedTableViewController-1.png"><img src="/img/FGPagedTableViewController-1-small.png" alt="" /></a></td>
-    <td><a class="fancybox" rel="group" href="/img/FGPagedTableViewController-2.png"><img src="/img/FGPagedTableViewController-2-small.png" alt="" /></a></td>
-    <td><a class="fancybox" rel="group" href="/img/FGPagedTableViewController-3.png"><img src="/img/FGPagedTableViewController-3-small.png" alt="" /></a></td>
+<td><a class="fancybox" rel="group" href="/FGPagedTableViewController/img/FGPagedTableViewController-1.png"><img src="/FGPagedTableViewController/img/FGPagedTableViewController-1-small.png" alt="" /></a></td>
+    <td><a class="fancybox" rel="group" href="/FGPagedTableViewController/img/FGPagedTableViewController-2.png"><img src="/FGPagedTableViewController/img/FGPagedTableViewController-2-small.png" alt="" /></a></td>
+    <td><a class="fancybox" rel="group" href="/FGPagedTableViewController/img/FGPagedTableViewController-3.png"><img src="/FGPagedTableViewController/img/FGPagedTableViewController-3-small.png" alt="" /></a></td>
   </tr>
 </table><h3>Subclass the controller and adopt the delegate and data source protocols</h3>
 
