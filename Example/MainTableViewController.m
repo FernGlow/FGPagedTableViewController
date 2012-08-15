@@ -53,6 +53,15 @@
 	[self.refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+	// Add initial status message
+	[self showStatusCellWithType:FGStatusCellTypeCustom];
+	self.statusCell.statusLabel.text = @"Pull Down to Refresh";
+	self.statusCell.detailsLabel.text = @"FGPagedTableViewController Example";
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
