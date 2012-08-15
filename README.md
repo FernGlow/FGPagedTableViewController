@@ -83,7 +83,7 @@ self.pageInfo = pageInfo;
 ```
 ## Documentation
 
-Read the [full documentation](http://fernglow.github.com/FGPagedTableViewController/Documentation/)
+Read the [full documentation](http://fernglow.github.com/FGPagedTableViewController/Documentation/html/index.html)
 
 ## Requirements
 
