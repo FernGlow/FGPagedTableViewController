@@ -1,5 +1,5 @@
 //
-//  PageInfo.m
+//  FGPageInfo.m
 //  FGPagedTableViewController
 //
 //  Copyright (c) 2012 Fern Glow, LLC (http://fernglow.com) All rights reserved.

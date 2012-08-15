@@ -1,5 +1,5 @@
 //
-//  PageInfo.h
+//  FGPageInfo.h
 //  FGPagedTableViewController
 //
 //  Copyright (c) 2012 Fern Glow, LLC (http://fernglow.com) All rights reserved.
@@ -30,7 +30,7 @@ static const NSString *FGPageInfoNumberOfResultsInCurrentPage	= @"numberOfResult
 
 @interface FGPageInfo : NSObject
 
-/** @name Initializing the PageInfo object */
+/** @name Initializing the FGPageInfo object */
 
 /**
  The total number of results to be paged through
@@ -58,7 +58,7 @@ static const NSString *FGPageInfoNumberOfResultsInCurrentPage	= @"numberOfResult
 
 
 /**
- Initialize the PageInfo object from a dictionary
+ Initialize the FGPageInfo object from a dictionary
  @param dict The dictionary containing the initialization data
  */
 - (id)initWithDictionary:(NSDictionary *)dict;

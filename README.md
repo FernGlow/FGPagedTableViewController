@@ -69,7 +69,7 @@ If you call any of the following data source or delegate methods, you must remem
 ### 3. Update the pageInfo object after you receive new data for the table view
 
 ```objective-c
-// Create a new PageInfo instance
+// Create a new FGPageInfo instance
 PageInfo *pageInfo = [[PageInfo alloc] init];
 
 // configure pageInfo according to your data source

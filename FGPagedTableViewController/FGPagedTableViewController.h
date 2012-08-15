@@ -91,7 +91,7 @@ Returns the paging cell if visible, otherwise returns nil. (read-only)
  
  This object should be updated every time data is added or removed from the data source.
 
- @see PageInfo
+ @see FGPageInfo
  */
 @property (nonatomic, strong) FGPageInfo *pageInfo;
 
