@@ -63,22 +63,25 @@
         </ul>
       </header>
       <section>
+        
+      <br /><br />
         <p>FGPagedTableViewController is a <a href="http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewController_Class/Reference/Reference.html">UITableViewController</a> subclass that adds status message and paging functionality. It was modeled after Apple's server-side search functionality in the iOS Mail app.</p>
 
 <h2>FGPagedTableViewController In Action</h2>
 
 <table>
-<tr>
-<th>Status Message</th>
-<th>Paging</th>
-<th>Paging in Progress</th>
+  <tr>
+    <th>Status Message</th>
+    <th>Paging</th>
+    <th>Paging in Progress</th>
   </tr>
-<tr>
-    <td><a id="elastic" class="fancybox" rel="group" href="img/FGPagedTableViewController-1.png" data-fancybox-group="gallery"><img src="img/FGPagedTableViewController-1-small.png" alt="" /></a></td>
-    <td><a id="elastic" class="fancybox" rel="group" href="img/FGPagedTableViewController-2.png" data-fancybox-group="gallery"><img src="img/FGPagedTableViewController-2-small.png" alt="" /></a></td>
-    <td><a id="elastic" class="fancybox" rel="group" href="img/FGPagedTableViewController-3.png" data-fancybox-group="gallery"><img src="img/FGPagedTableViewController-3-small.png" alt="" /></a></td>
+  <tr>
+    <td><a id="elastic" class="fancybox" rel="group" href="img/FGPagedTableViewController-1.png" data-fancybox-group="gallery" title="Status Message"><img src="img/FGPagedTableViewController-1-small.png" alt="" /></a></td>
+    <td><a id="elastic" class="fancybox" rel="group" href="img/FGPagedTableViewController-2.png" data-fancybox-group="gallery" title="Paging"><img src="img/FGPagedTableViewController-2-small.png" alt="" /></a></td>
+    <td><a id="elastic" class="fancybox" rel="group" href="img/FGPagedTableViewController-3.png" data-fancybox-group="gallery" title="Paging In-Progress"><img src="img/FGPagedTableViewController-3-small.png" alt="" /></a></td>
   </tr>
-</table><h3>Subclass the controller and adopt the delegate and data source protocols</h3>
+</table>
+<h3>Subclass the controller and adopt the delegate and data source protocols</h3>
 
 <div class="highlight"><pre><span class="k">@interface</span> <span class="nc">ExamplePagedTableViewController</span> : <span class="nc">FGPagedTableViewController</span> <span class="o">&lt;</span><span class="n">FGPagedTableViewControllerDelegate</span><span class="p">,</span> <span class="n">FGPagedTableViewControllerDataSource</span><span class="o">&gt;</span>
 </pre></div>
