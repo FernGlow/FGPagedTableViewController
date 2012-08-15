@@ -9,9 +9,9 @@ FGPagedTableViewController is a [UITableViewController](http://developer.apple.c
 	<th>Paging in Progress</th>
   </tr>
   <tr>
-	<td><a id="elastic" class="fancybox" rel="group" href="http://fernglow.github.com/FGPagedTableViewController/images/FGPagedTableViewController-1.png" data-fancybox-group="gallery" title="Status Message"><img src="http://fernglow.github.com/FGPagedTableViewController/images/FGPagedTableViewController-1-small.png" alt="" /></a></td>
-	<td><a id="elastic" class="fancybox" rel="group" href="http://fernglow.github.com/FGPagedTableViewController/images/FGPagedTableViewController-2.png" data-fancybox-group="gallery" title="Paging"><img src="http://fernglow.github.com/FGPagedTableViewController/images/FGPagedTableViewController-2-small.png" alt="" /></a></td>
-	<td><a id="elastic" class="fancybox" rel="group" href="http://fernglow.github.com/FGPagedTableViewController/images/FGPagedTableViewController-3.png" data-fancybox-group="gallery" title="Paging In-Progress"><img src="http://fernglow.github.com/FGPagedTableViewController/images/FGPagedTableViewController-3-small.png" alt="" /></a></td>
+	<td>![Status Message](http://fernglow.github.com/FGPagedTableViewController/images/FGPagedTableViewController-1-medium.png "Status Message")</td>
+	<td>![Paging Cell](http://fernglow.github.com/FGPagedTableViewController/images/FGPagedTableViewController-2-medium.png "Status Message")</td>
+	<td>![Paging in Progress Message](http://fernglow.github.com/FGPagedTableViewController/images/FGPagedTableViewController-3-medium.png "Status Message")</td>
   </tr>
 </table>
 
