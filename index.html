@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>FGPagedTableViewController by FernGlow</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>FGPagedTableViewController</h1>
+        <p>UITableViewController subclass that adds status and manual paging functionality.</p>
+
+        <p class="view"><a href="https://github.com/FernGlow/FGPagedTableViewController">View the Project on GitHub <small>FernGlow/FGPagedTableViewController</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/FernGlow/FGPagedTableViewController/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/FernGlow/FGPagedTableViewController/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/FernGlow/FGPagedTableViewController">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>FGPagedTableViewController is a <a href="http://developer.apple.com/library/ios/#documentation/uikit/reference/UITableViewController_Class/Reference/Reference.html">UITableViewController</a> subclass that adds status message and paging functionality. It was modeled after Apple's server-side search functionality in the iOS Mail app.</p>
+
+<h2>FGPagedTableViewController In Action</h2>
+
+<table>
+<tr>
+<th>Status Message</th>
+<th>Paging</th>
+<th>Paging in Progress</th>
+  </tr>
+<tr>
+<td>![Status Message](fernglow.github.com/FGPagedTableViewController/img/FGPagedTableViewController-1.png)</td>
+    <td>![Paging](fernglow.github.com/FGPagedTableViewController/img/FGPagedTableViewController-2.png)</td>
+    <td>![Paging in Progress](fernglow.github.com/FGPagedTableViewController/img/FGPagedTableViewController-3.png)</td>
+  </tr>
+</table><h3>Subclass the controller and adopt the delegate and data source protocols</h3>
+
+<div class="highlight"><pre><span class="k">@interface</span> <span class="nc">ExamplePagedTableViewController</span> : <span class="nc">FGPagedTableViewController</span> <span class="o">&lt;</span><span class="n">FGPagedTableViewControllerDelegate</span><span class="p">,</span> <span class="n">FGPagedTableViewControllerDataSource</span><span class="o">&gt;</span>
+</pre></div>
+
+<h3>Implement the required delegate and data source methods</h3>
+
+<div class="highlight"><pre><span class="k">-</span> <span class="p">(</span><span class="n">UITableViewCell</span> <span class="o">*</span><span class="p">)</span><span class="nf">pagedTableView:</span><span class="p">(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span> <span class="nf">resultCellForRowAtIndexPath:</span><span class="p">(</span><span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">)</span><span class="nv">indexPath</span>
+<span class="p">{</span>
+    <span class="n">UITableViewCell</span> <span class="o">*</span><span class="n">cell</span> <span class="o">=</span> <span class="p">[</span><span class="n">tableView</span> <span class="nl">dequeueReusableCellWithIdentifier:</span><span class="s">@"CellIdentifier"</span> <span class="nl">forIndexPath:</span><span class="n">indexPath</span><span class="p">];</span>
+    <span class="c1">// configure cell properties</span>
+    <span class="k">return</span> <span class="n">cell</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nf">numberOfRowsInPagedData</span>
+<span class="p">{</span>
+    <span class="c1">// return number of items to be paged through</span>
+<span class="p">}</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">pagedTableView:</span><span class="p">(</span><span class="n">UITableView</span> <span class="o">*</span><span class="p">)</span><span class="nv">tableView</span> <span class="nf">didSelectPagingCellForRowAtIndexPath:</span><span class="p">(</span><span class="n">NSIndexPath</span> <span class="o">*</span><span class="p">)</span><span class="nv">indexPath</span>
+<span class="p">{</span>
+    <span class="c1">// request a new page of data</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3>Update the pageInfo object after you receive new data</h3>
+
+<div class="highlight"><pre><span class="n">PageInfo</span> <span class="o">*</span><span class="n">pageInfo</span> <span class="o">=</span> <span class="p">[[</span><span class="n">PageInfo</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
+<span class="c1">// configure pageInfo properties</span>
+<span class="n">self</span><span class="p">.</span><span class="n">pageInfo</span> <span class="o">=</span> <span class="n">pageInfo</span><span class="p">;</span> <span class="c1">// triggers updates to the tableView, do this last.</span>
+</pre></div>
+
+<h2>Requirements</h2>
+
+<p>FGPagedTableViewController uses ARC and modern Objective-C features such as auto-synthesize, literals and subscripting. Thus, it must be compiled with Apple LLVM 4.0+.</p>
+
+<h2>License</h2>
+
+<p>FGPagedTableViewController is available under the MIT license. See the LICENSE file for more info.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/FernGlow">FernGlow</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
