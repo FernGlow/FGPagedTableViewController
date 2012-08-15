@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Andrew Michaelson" => "andrew@fernglow.com" }
   s.source       = { :git => "http://github.com/FernGlow/FGPagedTableViewController.git", :tag => "0.1.0" }
-  s.platform     = :ios, '6.0'
+  s.platform     = :ios, '5.0'
   s.source_files = 'FGPagedTableViewController'
   s.preserve_paths = ['FGPagedTableViewController', 'README.md', 'LICENSE']
   s.requires_arc = true

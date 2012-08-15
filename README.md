@@ -87,7 +87,8 @@ Read the [full documentation](http://fernglow.github.com/FGPagedTableViewControl
 
 ## Requirements
 
-FGPagedTableViewController uses ARC and modern Objective-C features such as auto-synthesize, literals and subscripting. Because of this, it must be compiled with Apple LLVM 4.0+.
+- iOS 5.1.1
+- Apple LLVM 4.0+ (ARC, auto-synthesize, literals and subscripting)
 
 ## Contributions
 

@@ -39,7 +39,9 @@
 	self.pagingDataSource = self;
 	
 	// Register a generic UITableViewCell with the UITableView
-	[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CellIdentifier"];
+	if ([self.tableView respondsToSelector:@selector(registerClass:forCellReuseIdentifier:)]) {
+		[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CellIdentifier"];
+	}
 	
 	// Create a simple simulated web-service to vend objects
 	self.exampleService = [[ExamplePseudoService alloc] initWithTotalNumberOfResults:18 numberOfResultsPerPage:5];
@@ -49,8 +51,10 @@
 	self.items = [NSMutableArray array];
 	
 	// Setup a refresh control to clear and refresh the data from the web-service
-	self.refreshControl = [[UIRefreshControl alloc] init];
-	[self.refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+	if ([self respondsToSelector:@selector(refreshControl)]) {
+		self.refreshControl = [[UIRefreshControl alloc] init];
+		[self.refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+	}
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -58,7 +62,8 @@
 	[super viewDidAppear:animated];
 	// Add initial status message
 	[self showStatusCellWithType:FGStatusCellTypeCustom];
-	self.statusCell.statusLabel.text = @"Pull Down to Refresh";
+		
+	self.statusCell.statusLabel.text = ([self respondsToSelector:@selector(refreshControl)]) ? @"Pull Down to Refresh" : @"Tap to Refresh";
 	self.statusCell.detailsLabel.text = @"FGPagedTableViewController Example";
 }
 
@@ -81,7 +86,17 @@
  */
 - (UITableViewCell *)pagedTableView:(UITableView *)tableView resultCellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellIdentifier" forIndexPath:indexPath];
+	UITableViewCell *cell = nil;
+	static NSString *reuseIdentifier = @"CellIdentifier";
+	if ([tableView respondsToSelector:@selector(dequeueReusableCellWithIdentifier:forIndexPath:)]) {
+		cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier forIndexPath:indexPath];
+	} else {
+		cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
+		if (cell == nil) {
+			cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
+		}
+	}
+	
 	cell.textLabel.text = self.items[indexPath.row];
 	return cell;
 }
@@ -143,9 +158,26 @@
 	[self removeStatusCell];
 	[self.items removeAllObjects];
 	[self.tableView reloadData];
-	[self.refreshControl endRefreshing];
+	if ([self respondsToSelector:@selector(refreshControl)]) {
+		[self.refreshControl endRefreshing];
+	}
 	[self showStatusCellWithType:FGStatusCellTypeSearching];
 	[self requestNewPage];
+}
+
+#pragma mark - UITableViewDelegate Methods (for iOS 5.x)
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	// Must call super's implementation so that we are extending the method and not overriding.
+	// This ensures that the paging delegate method is called when the paging cell is selected.
+	[super tableView:tableView didSelectRowAtIndexPath:indexPath];
+	
+	// Only call refresh if there is no refreshControl method up the responder chain (i.e. iOS 5.x)
+	if (![self respondsToSelector:@selector(refreshControl)]) {
+		if (indexPath.section == FGPagedTableViewSectionStatus) {
+			[self refresh:self];
+		}
+	}
 }
 
 @end
