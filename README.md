@@ -4,12 +4,14 @@ FGPagedTableViewController is a [UITableViewController](http://developer.apple.c
 
 <table>
   <tr>
-	<th>Status Message</th><th>Paging</th><th>Paging in Progress</th>
+	<th>Status Message</th>
+	<th>Paging</th>
+	<th>Paging in Progress</th>
   </tr>
   <tr>
-	<td>![Status Message](fernglow.github.com/FGPagedTableViewController/img/FGPagedTableViewController-1.png)</td>
-	<td>![Paging](fernglow.github.com/FGPagedTableViewController/img/FGPagedTableViewController-2.png)</td>
-	<td>![Paging in Progress](fernglow.github.com/FGPagedTableViewController/img/FGPagedTableViewController-3.png)</td>
+	<td><a id="elastic" class="fancybox" rel="group" href="img/FGPagedTableViewController-1.png" data-fancybox-group="gallery" title="Status Message"><img src="img/FGPagedTableViewController-1-small.png" alt="" /></a></td>
+	<td><a id="elastic" class="fancybox" rel="group" href="img/FGPagedTableViewController-2.png" data-fancybox-group="gallery" title="Paging"><img src="img/FGPagedTableViewController-2-small.png" alt="" /></a></td>
+	<td><a id="elastic" class="fancybox" rel="group" href="img/FGPagedTableViewController-3.png" data-fancybox-group="gallery" title="Paging In-Progress"><img src="img/FGPagedTableViewController-3-small.png" alt="" /></a></td>
   </tr>
 </table>
 
@@ -43,15 +45,16 @@ FGPagedTableViewController is a [UITableViewController](http://developer.apple.c
 ### Update the pageInfo object after you receive new data
 
 ```objective-c
+// Create a new PageInfo instance
 PageInfo *pageInfo = [[PageInfo alloc] init];
 
-// configure pageInfo properties
+// configure pageInfo according to your data source
 pageInfo.totalResults = 26;
 pageInfo.totalPages = 6;
-pageInfo.page = 
+pageInfo.page = 1;
 
-
-// triggers updates to the tableView, do this last.
+// update pageInfo with the latest paging information
+// this triggers updates to the tableView, so do this last.
 self.pageInfo = pageInfo;
 ```
 
