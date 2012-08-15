@@ -13,7 +13,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ExamplePseudoService/setSimulatedLatency:</TokenIdentifier>
-			<Abstract type="html">Simulated latency (round-trip) in seconds</Abstract>
+			<Abstract type="html">Simulated latency (round-trip) in seconds.</Abstract>
 			<DeclaredIn>ExamplePseudoService.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, assign) NSUInteger simulatedLatency</Declaration>
@@ -24,7 +24,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ExamplePseudoService/simulatedLatency</TokenIdentifier>
-			<Abstract type="html">Simulated latency (round-trip) in seconds</Abstract>
+			<Abstract type="html">Simulated latency (round-trip) in seconds.</Abstract>
 			<DeclaredIn>ExamplePseudoService.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, assign) NSUInteger simulatedLatency</Declaration>
@@ -35,7 +35,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ExamplePseudoService/initWithTotalNumberOfResults:numberOfResultsPerPage:</TokenIdentifier>
-			<Abstract type="html">Initialize the service</Abstract>
+			<Abstract type="html">Initialize the service.</Abstract>
 			<DeclaredIn>ExamplePseudoService.h</DeclaredIn>			
 			
 			<Declaration>- (id)initWithTotalNumberOfResults:(NSUInteger)totalNumberOfResults numberOfResultsPerPage:(NSUInteger)numberOfResultsPerPage</Declaration>
@@ -54,7 +54,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ExamplePseudoService/requestPage:completion:</TokenIdentifier>
-			<Abstract type="html">Request a page from the service</Abstract>
+			<Abstract type="html">Request a page from the service.</Abstract>
 			<DeclaredIn>ExamplePseudoService.h</DeclaredIn>			
 			
 			<Declaration>- (void)requestPage:(NSUInteger)pageNumber completion:(void ( ^ ) ( NSDictionary *pageDictionary ))completion</Declaration>
@@ -73,7 +73,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/ExamplePseudoService/setRequestActive:</TokenIdentifier>
-			<Abstract type="html">Returns whether or not there is a currently active request (readonly)</Abstract>
+			<Abstract type="html">Returns whether or not there is a currently active request. (read-only)</Abstract>
 			<DeclaredIn>ExamplePseudoService.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, assign, readonly, getter=isRequestActive) BOOL requestActive</Declaration>
@@ -84,7 +84,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/ExamplePseudoService/requestActive</TokenIdentifier>
-			<Abstract type="html">Returns whether or not there is a currently active request (readonly)</Abstract>
+			<Abstract type="html">Returns whether or not there is a currently active request. (read-only)</Abstract>
 			<DeclaredIn>ExamplePseudoService.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, assign, readonly, getter=isRequestActive) BOOL requestActive</Declaration>

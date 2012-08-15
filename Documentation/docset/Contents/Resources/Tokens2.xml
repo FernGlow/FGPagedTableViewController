@@ -101,7 +101,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/FGPageInfo/initWithDictionary:</TokenIdentifier>
-			<Abstract type="html">Initialize the PageInfo object from a dictionary</Abstract>
+			<Abstract type="html">Initialize the FGPageInfo object from a dictionary</Abstract>
 			<DeclaredIn>FGPageInfo.h</DeclaredIn>			
 			
 			<Declaration>- (id)initWithDictionary:(NSDictionary *)dict</Declaration>

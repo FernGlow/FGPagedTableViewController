@@ -102,6 +102,11 @@
 			<Abstract type="html">Object that encapsulates the paging data.</Abstract>
 			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
 			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/FGPageInfo</TokenIdentifier>
+		
+	</RelatedTokens>
+	
 			<Declaration>@property (nonatomic, strong) FGPageInfo *pageInfo</Declaration>
 			
 			
@@ -113,6 +118,11 @@
 			<Abstract type="html">Object that encapsulates the paging data.</Abstract>
 			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
 			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/FGPageInfo</TokenIdentifier>
+		
+	</RelatedTokens>
+	
 			<Declaration>@property (nonatomic, strong) FGPageInfo *pageInfo</Declaration>
 			
 			
