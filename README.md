@@ -9,9 +9,9 @@ FGPagedTableViewController is a [UITableViewController](http://developer.apple.c
 	<th>Paging in Progress</th>
   </tr>
   <tr>
-	<td>![Status Message](http://fernglow.github.com/FGPagedTableViewController/images/FGPagedTableViewController-1-medium.png "Status Message")</td>
-	<td>![Paging Cell](http://fernglow.github.com/FGPagedTableViewController/images/FGPagedTableViewController-2-medium.png "Status Message")</td>
-	<td>![Paging in Progress Message](http://fernglow.github.com/FGPagedTableViewController/images/FGPagedTableViewController-3-medium.png "Status Message")</td>
+	<td><img src="http://fernglow.github.com/FGPagedTableViewController/images/FGPagedTableViewController-1-medium.png"></td>
+	<td><img src="http://fernglow.github.com/FGPagedTableViewController/images/FGPagedTableViewController-2-medium.png"></td>
+	<td><img src="http://fernglow.github.com/FGPagedTableViewController/images/FGPagedTableViewController-3-medium.png"></td>
   </tr>
 </table>
 
