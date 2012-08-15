@@ -14,7 +14,7 @@
 		A12A6D0B15CC86950007B7C7 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A6D0715CC86950007B7C7 /* MainTableViewController.m */; };
 		A12A6D0E15CC86B50007B7C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A12A6D0C15CC86B50007B7C7 /* InfoPlist.strings */; };
 		A12A6D1C15CC86ED0007B7C7 /* FGPagedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A6D1115CC86ED0007B7C7 /* FGPagedTableViewController.m */; };
-		A12A6D2115CC86ED0007B7C7 /* PageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A6D1B15CC86ED0007B7C7 /* PageInfo.m */; };
+		A12A6D2115CC86ED0007B7C7 /* FGPageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A6D1B15CC86ED0007B7C7 /* FGPageInfo.m */; };
 		A12A6D2515CC87A10007B7C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A6D2415CC87A10007B7C7 /* main.m */; };
 		A12A6D2815CC87D90007B7C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A6D2715CC87D90007B7C7 /* AppDelegate.m */; };
 		A12C0C5D15DB19310094FB23 /* FGPagedTableViewController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A12C0C5A15DB19310094FB23 /* FGPagedTableViewController.podspec */; };
@@ -40,8 +40,8 @@
 		A12A6D0D15CC86B50007B7C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		A12A6D1015CC86ED0007B7C7 /* FGPagedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGPagedTableViewController.h; sourceTree = "<group>"; };
 		A12A6D1115CC86ED0007B7C7 /* FGPagedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGPagedTableViewController.m; sourceTree = "<group>"; };
-		A12A6D1A15CC86ED0007B7C7 /* PageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageInfo.h; sourceTree = "<group>"; };
-		A12A6D1B15CC86ED0007B7C7 /* PageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageInfo.m; sourceTree = "<group>"; };
+		A12A6D1A15CC86ED0007B7C7 /* FGPageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGPageInfo.h; sourceTree = "<group>"; };
+		A12A6D1B15CC86ED0007B7C7 /* FGPageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGPageInfo.m; sourceTree = "<group>"; };
 		A12A6D2415CC87A10007B7C7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
 		A12A6D2615CC87D90007B7C7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A12A6D2715CC87D90007B7C7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -86,8 +86,8 @@
 				A12A6D1115CC86ED0007B7C7 /* FGPagedTableViewController.m */,
 				A12A6D1215CC86ED0007B7C7 /* FGPagingTableViewCell */,
 				A1187F9215D9CBB8007EB959 /* FGStatusTableViewCell */,
-				A12A6D1A15CC86ED0007B7C7 /* PageInfo.h */,
-				A12A6D1B15CC86ED0007B7C7 /* PageInfo.m */,
+				A12A6D1A15CC86ED0007B7C7 /* FGPageInfo.h */,
+				A12A6D1B15CC86ED0007B7C7 /* FGPageInfo.m */,
 			);
 			name = FGPagedTableViewController;
 			path = ../FGPagedTableViewController;
@@ -238,7 +238,7 @@
 			files = (
 				A12A6D0B15CC86950007B7C7 /* MainTableViewController.m in Sources */,
 				A12A6D1C15CC86ED0007B7C7 /* FGPagedTableViewController.m in Sources */,
-				A12A6D2115CC86ED0007B7C7 /* PageInfo.m in Sources */,
+				A12A6D2115CC86ED0007B7C7 /* FGPageInfo.m in Sources */,
 				A12A6D2515CC87A10007B7C7 /* main.m in Sources */,
 				A12A6D2815CC87D90007B7C7 /* AppDelegate.m in Sources */,
 				A1187F9015D9CB96007EB959 /* FGPagingTableViewCell.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  PageInfo.m
+//  PageInfo.h
 //  FGPagedTableViewController
 //
 //  Copyright (c) 2012 Fern Glow, LLC (http://fernglow.com) All rights reserved.
@@ -21,25 +21,46 @@
 //  IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 //  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "PageInfo.h"
+#import <Foundation/Foundation.h>
 
-@implementation PageInfo
+static const NSString *FGPageInfoNumberOfResults				= @"numberOfResults";				// required
+static const NSString *FGPageInfoNumberOfPages					= @"numberOfPages";					// required
+static const NSString *FGPageInfoCurrentPageNumber				= @"currentPageNumber";				// required
+static const NSString *FGPageInfoNumberOfResultsInCurrentPage	= @"numberOfResultsInCurrentPage";	// unused
 
-- (id)initWithDictionary:(NSDictionary *)dict
-{
-	self = [super init];
-	if (self) {
-		self.numberOfResults = [dict[kPageInfoNumberOfResults] integerValue];
-		self.numberOfPages = [dict[kPageInfoNumberOfPages] integerValue];
-		self.currentPageNumber = [dict[kPageInfoCurrentPageNumber] integerValue];
-		self.numberOfResultsInCurrentPage = [dict[kPageInfoNumberOfResultsInCurrentPage] integerValue];
-	}
-	return self;
-}
+@interface FGPageInfo : NSObject
 
-- (NSString *)description
-{
-	return [NSString stringWithFormat:@"\n\nnumberOfResults: %d\nnumberOfPages: %d\ncurrentPageNumber: %d\nnumberOfResultsInCurrentPage: %d\n\n", _numberOfResults, _numberOfPages, _currentPageNumber, _numberOfResultsInCurrentPage];
-}
+/** @name Initializing the PageInfo object */
+
+/**
+ The total number of results to be paged through
+ */
+@property (nonatomic, assign) NSInteger numberOfResults;
+
+
+/**
+ The total number of pages to be paged through
+ */
+@property (nonatomic, assign) NSInteger numberOfPages;
+
+
+/**
+ The current page
+ */
+@property (nonatomic, assign) NSInteger currentPageNumber;
+
+
+/**
+ The total number of results in the current page
+ @warning This property is currently unused and will be ignored.
+ */
+@property (nonatomic, assign) NSInteger numberOfResultsInCurrentPage;
+
+
+/**
+ Initialize the PageInfo object from a dictionary
+ @param dict The dictionary containing the initialization data
+ */
+- (id)initWithDictionary:(NSDictionary *)dict;
 
 @end

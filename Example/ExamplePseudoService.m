@@ -22,7 +22,7 @@
 //  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #import "ExamplePseudoService.h"
-#import "PageInfo.h"
+#import "FGPageInfo.h"
 
 @interface ExamplePseudoService ()
 @property (nonatomic, strong) NSMutableArray *objects;
@@ -62,10 +62,10 @@
 
 	NSMutableDictionary *requestDictionary = [@{} mutableCopy];
 	[requestDictionary setObject:requestedObjects forKey:@"objects"];
-	[requestDictionary setObject:@(self.objects.count) forKey:kPageInfoNumberOfResults];
-	[requestDictionary setObject:@(totalPages) forKey:kPageInfoNumberOfPages];
-	[requestDictionary setObject:@(currentPage) forKey:kPageInfoCurrentPageNumber];
-	[requestDictionary setObject:@(numberOfResultsInCurrentPage) forKey:kPageInfoNumberOfResultsInCurrentPage];
+	[requestDictionary setObject:@(self.objects.count) forKey:FGPageInfoNumberOfResults];
+	[requestDictionary setObject:@(totalPages) forKey:FGPageInfoNumberOfPages];
+	[requestDictionary setObject:@(currentPage) forKey:FGPageInfoCurrentPageNumber];
+	[requestDictionary setObject:@(numberOfResultsInCurrentPage) forKey:FGPageInfoNumberOfResultsInCurrentPage];
 	
 	return requestDictionary;
 }

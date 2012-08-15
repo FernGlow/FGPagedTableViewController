@@ -22,7 +22,7 @@
 //  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #import "MainTableViewController.h"
-#import "PageInfo.h"
+#import "FGPageInfo.h"
 
 @interface MainTableViewController ()
 @property (nonatomic, strong) NSMutableArray *items;
@@ -108,7 +108,7 @@
 	[self.exampleService requestPage:pageToRequest completion:^(NSDictionary *pageDictionary) {
 
 		NSArray *objects = pageDictionary[@"objects"];
-		PageInfo *pageInfo = [[PageInfo alloc] initWithDictionary:pageDictionary];
+		FGPageInfo *pageInfo = [[FGPageInfo alloc] initWithDictionary:pageDictionary];
 		
 		[objects enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
 			[self.items addObject:obj];

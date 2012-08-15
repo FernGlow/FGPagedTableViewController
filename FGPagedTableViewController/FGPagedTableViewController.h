@@ -24,7 +24,7 @@
 #import <UIKit/UIKit.h>
 #import "FGStatusTableViewCell.h"
 #import "FGPagingTableViewCell.h"
-#import "PageInfo.h"
+#import "FGPageInfo.h"
 
 @class FGPagedTableViewControllerDataSource;
 
@@ -87,7 +87,7 @@ typedef enum : NSInteger {
 
  @see PageInfo
  */
-@property (nonatomic, strong) PageInfo *pageInfo;
+@property (nonatomic, strong) FGPageInfo *pageInfo;
 
 /** @name Managing the Paging of the Table View */
 

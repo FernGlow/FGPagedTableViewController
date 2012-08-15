@@ -67,7 +67,7 @@
 	}
 }
 
-- (void)setPageInfo:(PageInfo *)pageInfo
+- (void)setPageInfo:(FGPageInfo *)pageInfo
 {
 	_pageInfo = pageInfo;
 	[self updateStatusIfNeeded];
