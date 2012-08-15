@@ -15,6 +15,8 @@ FGPagedTableViewController is a [UITableViewController](http://developer.apple.c
   </tr>
 </table>
 
+## Getting Started
+
 ### Subclass the controller and adopt the delegate and data source protocols
 
 ```objective-c
@@ -57,6 +59,9 @@ pageInfo.page = 1;
 // this triggers updates to the tableView, so do this last.
 self.pageInfo = pageInfo;
 ```
+## Documentation
+
+Read the [full documentation](http://fernglow.github.com/FGPagedTableViewController/Documentation/)
 
 ## Requirements
 
