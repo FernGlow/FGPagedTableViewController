@@ -125,6 +125,11 @@
  */
 - (void)refresh:(id)sender
 {
+	if ([self.exampleService isRequestActive]) {
+		[self.refreshControl endRefreshing];
+		return;
+	}
+	
 	self.pageInfo = nil;
 	[self removePagingCell];
 	[self removeStatusCell];

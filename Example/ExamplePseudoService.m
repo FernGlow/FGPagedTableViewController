@@ -74,10 +74,13 @@
 
 - (void)requestPage:(NSUInteger)pageNumber completion:(void (^)(NSDictionary *pageDictionary))completion
 {
+	if (self.isRequestActive) { return; }
+	self.requestActive = YES;
 	int64_t delayInSeconds = self.simulatedLatency;
 	dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-	dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+	dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
 		if (completion) completion([self pageDictionaryForPageNumber:pageNumber]);
+		self.requestActive = NO;
 	});
 }
 
