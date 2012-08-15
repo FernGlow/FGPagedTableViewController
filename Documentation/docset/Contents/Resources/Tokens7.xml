@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/FGPagedTableViewControllerDataSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/FGPagedTableViewControllerDataSource</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FGPagedTableViewControllerDataSource/pagedTableView:resultCellForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Asks the data source to return the result cell for the given row.</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+			<Declaration>- (UITableViewCell *)pagedTableView:(UITableView *)tableView resultCellForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">A table-view object requesting the cell</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating a row in tableView</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pagedTableView:resultCellForRowAtIndexPath:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FGPagedTableViewControllerDataSource/numberOfRowsInPagedData</TokenIdentifier>
+			<Abstract type="html">Asks the data source to return the number of rows in the data to be paged.</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)numberOfRowsInPagedData</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfRowsInPagedData</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

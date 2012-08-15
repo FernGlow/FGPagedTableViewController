@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>FGPagedTableViewControllerDelegate Protocol Reference</title>
+		<title>FGPagingTableViewCell Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
@@ -17,7 +17,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">FGPagedTableViewControllerDelegate Protocol Reference</h1>
+				<h1 class="hideInXcode">FGPagingTableViewCell Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -36,13 +36,19 @@
 	
 	
 	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/cellType">&nbsp;&nbsp;&nbsp;&nbsp;cellType</option>
+	
+	<option value="//api/name/detailsLabel">&nbsp;&nbsp;&nbsp;&nbsp;detailsLabel</option>
+	
+	<option value="//api/name/spinnerView">&nbsp;&nbsp;&nbsp;&nbsp;spinnerView</option>
+	
+	<option value="//api/name/statusLabel">&nbsp;&nbsp;&nbsp;&nbsp;statusLabel</option>
 	
 	
 	
 	
-	<option value="instance_methods">Instance Methods</option>
-	
-	<option value="//api/name/pagedTableView:didSelectPagingCellForRowAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- pagedTableView:didSelectPagingCellForRowAtIndexPath:</option>
 	
 	
 	
@@ -58,28 +64,36 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Manging Text as Cell Content">Manging Text as Cell Content</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cellType">cellType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/detailsLabel">detailsLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spinnerView">spinnerView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/statusLabel">statusLabel</a></span></li>
+	
 </ul></li>
 
 
 
 
-
-
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pagedTableView:didSelectPagingCellForRowAtIndexPath:">pagedTableView:didSelectPagingCellForRowAtIndexPath:</a></span></li>
-	
-</ul></li>
 
 
 			</ul>
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="FGPagedTableViewControllerDelegate Protocol Reference" name="top"></a>
+				<a title="FGPagingTableViewCell Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -88,18 +102,18 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">FGPagedTableViewControllerDelegate Protocol Reference</h1>
+						<h1 class="title title-header">FGPagingTableViewCell Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Conforms to</td>
-	<td class="specification-value">NSObject</td>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UITableViewCell</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">FGPagedTableViewController.h</td>
+	<td class="specification-value">FGPagingTableViewCell.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -113,17 +127,38 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
+						<a title="Manging Text as Cell Content" name="task_Manging Text as Cell Content"></a>
 						
-						
-
+<h3 class="subsubtitle task-title">Manging Text as Cell Content</h3>
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/pagedTableView:didSelectPagingCellForRowAtIndexPath:">&ndash;&nbsp;pagedTableView:didSelectPagingCellForRowAtIndexPath:</a></code>
-		<span class="tooltip"><p>Tells the paging delegate that the specified paging row is now selected.</p></span>
+		<code><a href="#//api/name/statusLabel">&nbsp;&nbsp;statusLabel</a></code>
+		<span class="tooltip"><p>Returns the label used for the main textual content of the paging table view cell. (read-only)</p></span>
 	</span>
+	<span class="task-item-suffix">property</span>
 	
-	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/detailsLabel">&nbsp;&nbsp;detailsLabel</a></code>
+		<span class="tooltip"><p>Returns the secondary label of the paging table view cell. (read-only)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spinnerView">&nbsp;&nbsp;spinnerView</a></code>
+		<span class="tooltip"><p>Returns the activity indicator view the table view cell. (read-only)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cellType">&nbsp;&nbsp;cellType</a></code>
+		<span class="tooltip"><p>The type of paging table view cell.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
 </li>
 						</ul>
 						
@@ -133,44 +168,25 @@
 					
 					
 					
-					
-					
-					
-					
 					<div class="section section-methods">
-						<a title="Instance Methods" name="instance_methods"></a>
-						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/pagedTableView:didSelectPagingCellForRowAtIndexPath:" title="pagedTableView:didSelectPagingCellForRowAtIndexPath:"></a>
-	<h3 class="subsubtitle method-title">pagedTableView:didSelectPagingCellForRowAtIndexPath:</h3>
+	<a name="//api/name/cellType" title="cellType"></a>
+	<h3 class="subsubtitle method-title">cellType</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Tells the paging delegate that the specified paging row is now selected.</p>
+		<p>The type of paging table view cell.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)pagedTableView:(UITableView *)<em>tableView</em> didSelectPagingCellForRowAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) FGPagingCellType cellType</code></div>
 
     
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>tableView</em></dt>
-			<dd><p>A table-view object informing the delegate about the new paging row selection.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>indexPath</em></dt>
-			<dd><p>An index path locating a row in tableView</p></dd>
-		</dl>
-		
-	</div>
 	
 	
 	
@@ -186,13 +202,125 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">FGPagedTableViewController.h</code><br />
+		<code class="declared-in-ref">FGPagingTableViewCell.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/detailsLabel" title="detailsLabel"></a>
+	<h3 class="subsubtitle method-title">detailsLabel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the secondary label of the paging table view cell. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) IBOutlet UILabel *detailsLabel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FGPagingTableViewCell.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spinnerView" title="spinnerView"></a>
+	<h3 class="subsubtitle method-title">spinnerView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the activity indicator view the table view cell. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) IBOutlet UIActivityIndicatorView *spinnerView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FGPagingTableViewCell.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/statusLabel" title="statusLabel"></a>
+	<h3 class="subsubtitle method-title">statusLabel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the label used for the main textual content of the paging table view cell. (read-only)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) IBOutlet UILabel *statusLabel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">FGPagingTableViewCell.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 					</div>
+					
+					
+					
+					
 					
 					
 				</div>
@@ -205,7 +333,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Fern Glow, LLC. All rights reserved. (Last updated: 2012-08-14)</span><br />
+						<p><span class="copyright">&copy; 2012 Fern Glow, LLC. All rights reserved. (Last updated: 2012-08-15)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						

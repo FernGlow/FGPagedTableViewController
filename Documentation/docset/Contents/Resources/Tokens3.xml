@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FGPagedTableViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FGPagedTableViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGPagedTableViewController/setPagingDelegate:</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the receiving table view controller.</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/FGPagedTableViewControllerDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;FGPagedTableViewControllerDelegate&gt; pagingDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/pagingDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FGPagedTableViewController/pagingDelegate</TokenIdentifier>
+			<Abstract type="html">The object that acts as the delegate of the receiving table view controller.</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/FGPagedTableViewControllerDelegate</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;FGPagedTableViewControllerDelegate&gt; pagingDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/pagingDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGPagedTableViewController/setPagingDataSource:</TokenIdentifier>
+			<Abstract type="html">The object that acts as the data source of the receiving table view controller.</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/FGPagedTableViewControllerDataSource</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;FGPagedTableViewControllerDataSource&gt; pagingDataSource</Declaration>
+			
+			
+			<Anchor>//api/name/pagingDataSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FGPagedTableViewController/pagingDataSource</TokenIdentifier>
+			<Abstract type="html">The object that acts as the data source of the receiving table view controller.</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intf/FGPagedTableViewControllerDataSource</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, weak) id&lt;FGPagedTableViewControllerDataSource&gt; pagingDataSource</Declaration>
+			
+			
+			<Anchor>//api/name/pagingDataSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGPagedTableViewController/setPagingCell:</TokenIdentifier>
+			<Abstract type="html">Returns the paging cell if visible, otherwise returns nil. (read-only)</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) FGPagingTableViewCell *pagingCell</Declaration>
+			
+			
+			<Anchor>//api/name/pagingCell</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FGPagedTableViewController/pagingCell</TokenIdentifier>
+			<Abstract type="html">Returns the paging cell if visible, otherwise returns nil. (read-only)</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) FGPagingTableViewCell *pagingCell</Declaration>
+			
+			
+			<Anchor>//api/name/pagingCell</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGPagedTableViewController/setPageInfo:</TokenIdentifier>
+			<Abstract type="html">Object that encapsulates the paging data.</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) FGPageInfo *pageInfo</Declaration>
+			
+			
+			<Anchor>//api/name/pageInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FGPagedTableViewController/pageInfo</TokenIdentifier>
+			<Abstract type="html">Object that encapsulates the paging data.</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) FGPageInfo *pageInfo</Declaration>
+			
+			
+			<Anchor>//api/name/pageInfo</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGPagedTableViewController/setStatusCell:</TokenIdentifier>
+			<Abstract type="html">Returns the status cell if visible, otherwise returns nil. (read-only)</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) FGStatusTableViewCell *statusCell</Declaration>
+			
+			
+			<Anchor>//api/name/statusCell</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FGPagedTableViewController/statusCell</TokenIdentifier>
+			<Abstract type="html">Returns the status cell if visible, otherwise returns nil. (read-only)</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) FGStatusTableViewCell *statusCell</Declaration>
+			
+			
+			<Anchor>//api/name/statusCell</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGPagedTableViewController/showPagingCellWithType:</TokenIdentifier>
+			<Abstract type="html">Shows a Paging cell of the specified type</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/FGPagingTableViewCell</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)showPagingCellWithType:(FGPagingCellType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">Type of paging cell to display</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/showPagingCellWithType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGPagedTableViewController/removePagingCell</TokenIdentifier>
+			<Abstract type="html">Removes the paging cell from the table-view if it is currently visible</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)removePagingCell</Declaration>
+			
+			
+			<Anchor>//api/name/removePagingCell</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGPagedTableViewController/showStatusCellWithType:</TokenIdentifier>
+			<Abstract type="html">Shows a Status cell of the specified type</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/FGStatusTableViewCell</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)showStatusCellWithType:(FGStatusCellType)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">Type of cell to display</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/showStatusCellWithType:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGPagedTableViewController/removeStatusCell</TokenIdentifier>
+			<Abstract type="html">Removes the Status cell from the table-view if it is currently visible</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeStatusCell</Declaration>
+			
+			
+			<Anchor>//api/name/removeStatusCell</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

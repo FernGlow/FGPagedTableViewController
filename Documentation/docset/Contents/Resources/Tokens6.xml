@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MainTableViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MainTableViewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MainTableViewController.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MainTableViewController/setExampleService:</TokenIdentifier>
+			<Abstract type="html">Service that vends the data used in the example application.</Abstract>
+			<DeclaredIn>MainTableViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/ExamplePseudoService</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, strong) ExamplePseudoService *exampleService</Declaration>
+			
+			
+			<Anchor>//api/name/exampleService</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MainTableViewController/exampleService</TokenIdentifier>
+			<Abstract type="html">Service that vends the data used in the example application.</Abstract>
+			<DeclaredIn>MainTableViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/ExamplePseudoService</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, strong) ExamplePseudoService *exampleService</Declaration>
+			
+			
+			<Anchor>//api/name/exampleService</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/FGPagedTableViewControllerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/FGPagedTableViewControllerDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/FGPagedTableViewControllerDelegate/pagedTableView:didSelectPagingCellForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">Tells the paging delegate that the specified paging row is now selected.</Abstract>
+			<DeclaredIn>FGPagedTableViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)pagedTableView:(UITableView *)tableView didSelectPagingCellForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">A table-view object informing the delegate about the new paging row selection.</Abstract>
+				</Parameter><Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">An index path locating a row in tableView</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pagedTableView:didSelectPagingCellForRowAtIndexPath:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

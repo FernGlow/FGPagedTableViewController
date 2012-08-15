@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FGStatusTableViewCell.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FGStatusTableViewCell</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FGStatusTableViewCell.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGStatusTableViewCell/setStatusLabel:</TokenIdentifier>
+			<Abstract type="html">Returns the label used for the main textual content of the paging table view cell. (read-only)</Abstract>
+			<DeclaredIn>FGStatusTableViewCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) IBOutlet UILabel *statusLabel</Declaration>
+			
+			
+			<Anchor>//api/name/statusLabel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FGStatusTableViewCell/statusLabel</TokenIdentifier>
+			<Abstract type="html">Returns the label used for the main textual content of the paging table view cell. (read-only)</Abstract>
+			<DeclaredIn>FGStatusTableViewCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) IBOutlet UILabel *statusLabel</Declaration>
+			
+			
+			<Anchor>//api/name/statusLabel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGStatusTableViewCell/setDetailsLabel:</TokenIdentifier>
+			<Abstract type="html">Returns the secondary label of the paging table view cell. (read-only)</Abstract>
+			<DeclaredIn>FGStatusTableViewCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) IBOutlet UILabel *detailsLabel</Declaration>
+			
+			
+			<Anchor>//api/name/detailsLabel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FGStatusTableViewCell/detailsLabel</TokenIdentifier>
+			<Abstract type="html">Returns the secondary label of the paging table view cell. (read-only)</Abstract>
+			<DeclaredIn>FGStatusTableViewCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) IBOutlet UILabel *detailsLabel</Declaration>
+			
+			
+			<Anchor>//api/name/detailsLabel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGStatusTableViewCell/setSpinnerView:</TokenIdentifier>
+			<Abstract type="html">Returns the activity indicator view the table view cell. (read-only)</Abstract>
+			<DeclaredIn>FGStatusTableViewCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) IBOutlet UIActivityIndicatorView *spinnerView</Declaration>
+			
+			
+			<Anchor>//api/name/spinnerView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FGStatusTableViewCell/spinnerView</TokenIdentifier>
+			<Abstract type="html">Returns the activity indicator view the table view cell. (read-only)</Abstract>
+			<DeclaredIn>FGStatusTableViewCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) IBOutlet UIActivityIndicatorView *spinnerView</Declaration>
+			
+			
+			<Anchor>//api/name/spinnerView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGStatusTableViewCell/setCellType:</TokenIdentifier>
+			<Abstract type="html">The type of status table view cell.</Abstract>
+			<DeclaredIn>FGStatusTableViewCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) FGStatusCellType cellType</Declaration>
+			
+			
+			<Anchor>//api/name/cellType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FGStatusTableViewCell/cellType</TokenIdentifier>
+			<Abstract type="html">The type of status table view cell.</Abstract>
+			<DeclaredIn>FGStatusTableViewCell.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) FGStatusCellType cellType</Declaration>
+			
+			
+			<Anchor>//api/name/cellType</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

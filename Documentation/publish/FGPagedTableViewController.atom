@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
+    <id>http://fernglow.github.com/FGPagedTableViewController/FGPagedTableViewController.atom/20120815144002</id>
+    <title type="text">FGPagedTableViewController Documentation</title>
+    <rights>Copyright © 2012 Fern Glow, LLC. All rights reserved.</rights>
+    <link rel="self" href="http://fernglow.github.com/FGPagedTableViewController/FGPagedTableViewController.atom"></link>
+    <docset:publisherName>Fern Glow, LLC</docset:publisherName>
+    <docset:publisherID>com.fernglow.documentation</docset:publisherID>
+    <updated>2012-08-15T14:40:02-07:00</updated>
+    <entry>
+        <id>tag:fernglow.github.com,2012-08-15:com.fernglow.FGPagedTableViewController/1.0.0</id>
+        <title type="text">FGPagedTableViewController Documentation</title>
+        <updated>2012-08-15T14:40:02-07:00</updated>
+        <content type="text">FGPagedTableViewController Documentation (v1.0.0)</content>
+        <link rel="enclosure" type="application/octet-stream" href="http://fernglow.github.com/FGPagedTableViewController/com.fernglow.FGPagedTableViewController-1.0.xar" length="66159"></link>
+        <docset:identifier>com.fernglow.FGPagedTableViewController</docset:identifier>
+        <docset:version>1.0.0</docset:version>
+        <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>
+    </entry>
+</feed>

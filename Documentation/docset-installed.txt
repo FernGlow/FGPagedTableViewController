@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/Andy/Library/Developer/Shared/Documentation/DocSets/com.fernglow.FGPagedTableViewController.docset
+Time: 2012-08-15 21:40:02 +0000

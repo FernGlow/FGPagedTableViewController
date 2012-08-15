@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FGPageInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FGPageInfo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>FGPageInfo.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGPageInfo/setNumberOfResults:</TokenIdentifier>
+			<Abstract type="html">The total number of results to be paged through</Abstract>
+			<DeclaredIn>FGPageInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSInteger numberOfResults</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfResults</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FGPageInfo/numberOfResults</TokenIdentifier>
+			<Abstract type="html">The total number of results to be paged through</Abstract>
+			<DeclaredIn>FGPageInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSInteger numberOfResults</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfResults</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGPageInfo/setNumberOfPages:</TokenIdentifier>
+			<Abstract type="html">The total number of pages to be paged through</Abstract>
+			<DeclaredIn>FGPageInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSInteger numberOfPages</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfPages</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FGPageInfo/numberOfPages</TokenIdentifier>
+			<Abstract type="html">The total number of pages to be paged through</Abstract>
+			<DeclaredIn>FGPageInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSInteger numberOfPages</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfPages</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGPageInfo/setCurrentPageNumber:</TokenIdentifier>
+			<Abstract type="html">The current page</Abstract>
+			<DeclaredIn>FGPageInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSInteger currentPageNumber</Declaration>
+			
+			
+			<Anchor>//api/name/currentPageNumber</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FGPageInfo/currentPageNumber</TokenIdentifier>
+			<Abstract type="html">The current page</Abstract>
+			<DeclaredIn>FGPageInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSInteger currentPageNumber</Declaration>
+			
+			
+			<Anchor>//api/name/currentPageNumber</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGPageInfo/setNumberOfResultsInCurrentPage:</TokenIdentifier>
+			<Abstract type="html">The total number of results in the current page</Abstract>
+			<DeclaredIn>FGPageInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSInteger numberOfResultsInCurrentPage</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfResultsInCurrentPage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/FGPageInfo/numberOfResultsInCurrentPage</TokenIdentifier>
+			<Abstract type="html">The total number of results in the current page</Abstract>
+			<DeclaredIn>FGPageInfo.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) NSInteger numberOfResultsInCurrentPage</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfResultsInCurrentPage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FGPageInfo/initWithDictionary:</TokenIdentifier>
+			<Abstract type="html">Initialize the PageInfo object from a dictionary</Abstract>
+			<DeclaredIn>FGPageInfo.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDictionary:(NSDictionary *)dict</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dict</Name>
+					<Abstract type="html">The dictionary containing the initialization data</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithDictionary:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
