@@ -94,6 +94,18 @@
 			self.detailsLabel.text = @"One moment please";
 			break;
 		}
+		case FGStatusCellTypeCustom:
+		{
+			self.selectionStyle = UITableViewCellSelectionStyleNone;
+			self.tag = FGStatusCellTypeCustom;
+			self.spinnerView.hidesWhenStopped = YES;
+			[self.spinnerView stopAnimating];
+			self.statusLabel.textColor = [UIColor darkGrayColor];
+			self.detailsLabel.textColor = [UIColor darkGrayColor];
+			self.statusLabel.text = @"";
+			self.detailsLabel.text = @"";
+			break;
+		}
 		default:
 			break;
 	}

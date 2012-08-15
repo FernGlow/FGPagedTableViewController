@@ -28,7 +28,8 @@ typedef enum : NSInteger {
 	FGStatusCellTypeSearching		= 201,
 	FGStatusCellTypeNoResults		= 202,
 	FGStatusCellTypeNetworkError	= 203,
-	FGStatusCellTypeAuthenticating	= 204
+	FGStatusCellTypeAuthenticating	= 204,
+	FGStatusCellTypeCustom			= 205
 } FGStatusCellType;
 
 @interface FGStatusTableViewCell : UITableViewCell
