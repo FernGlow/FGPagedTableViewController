@@ -43,7 +43,7 @@
 	
 	// Create a simple simulated web-service to vend objects
 	self.exampleService = [[ExamplePseudoService alloc] initWithTotalNumberOfResults:18 numberOfResultsPerPage:5];
-	self.exampleService.simulatedLatency = 5.0;
+	self.exampleService.simulatedLatency = 4.0;
 	
 	// Create a mutable array to store the objects retrieved from the example service
 	self.items = [NSMutableArray array];
