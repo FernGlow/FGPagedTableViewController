@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1187F9015D9CB96007EB959 /* FGPagingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1187F8E15D9CB96007EB959 /* FGPagingTableViewCell.m */; };
+		A1187F9115D9CB96007EB959 /* FGPagingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1187F8F15D9CB96007EB959 /* FGPagingTableViewCell.xib */; };
+		A1187F9615D9CBB8007EB959 /* FGStatusTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1187F9415D9CBB8007EB959 /* FGStatusTableViewCell.m */; };
+		A1187F9715D9CBB8007EB959 /* FGStatusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1187F9515D9CBB8007EB959 /* FGStatusTableViewCell.xib */; };
+		A12A6D0B15CC86950007B7C7 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A6D0715CC86950007B7C7 /* MainTableViewController.m */; };
+		A12A6D0E15CC86B50007B7C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A12A6D0C15CC86B50007B7C7 /* InfoPlist.strings */; };
+		A12A6D1C15CC86ED0007B7C7 /* FGPagedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A6D1115CC86ED0007B7C7 /* FGPagedTableViewController.m */; };
+		A12A6D2115CC86ED0007B7C7 /* PageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A6D1B15CC86ED0007B7C7 /* PageInfo.m */; };
+		A12A6D2515CC87A10007B7C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A6D2415CC87A10007B7C7 /* main.m */; };
+		A12A6D2815CC87D90007B7C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A12A6D2715CC87D90007B7C7 /* AppDelegate.m */; };
+		A12C0C5D15DB19310094FB23 /* FGPagedTableViewController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A12C0C5A15DB19310094FB23 /* FGPagedTableViewController.podspec */; };
+		A12C0C5E15DB19310094FB23 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A12C0C5B15DB19310094FB23 /* LICENSE */; };
+		A12C0C5F15DB19310094FB23 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A12C0C5C15DB19310094FB23 /* README.md */; };
+		A177699A15D9D90A00ACE28F /* ExamplePseudoService.m in Sources */ = {isa = PBXBuildFile; fileRef = A177699915D9D90A00ACE28F /* ExamplePseudoService.m */; };
+		A1DE530515BA43080074D875 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17F298D15B4AEE500EE113C /* UIKit.framework */; };
+		A1DE530615BA43080074D875 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17F298F15B4AEE500EE113C /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1187F8D15D9CB96007EB959 /* FGPagingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGPagingTableViewCell.h; sourceTree = "<group>"; };
+		A1187F8E15D9CB96007EB959 /* FGPagingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGPagingTableViewCell.m; sourceTree = "<group>"; };
+		A1187F8F15D9CB96007EB959 /* FGPagingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGPagingTableViewCell.xib; sourceTree = "<group>"; };
+		A1187F9315D9CBB8007EB959 /* FGStatusTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGStatusTableViewCell.h; sourceTree = "<group>"; };
+		A1187F9415D9CBB8007EB959 /* FGStatusTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGStatusTableViewCell.m; sourceTree = "<group>"; };
+		A1187F9515D9CBB8007EB959 /* FGStatusTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGStatusTableViewCell.xib; sourceTree = "<group>"; };
+		A12A6D0415CC86950007B7C7 /* FGPagedTableViewController-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FGPagedTableViewController-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A12A6D0515CC86950007B7C7 /* FGPagedTableViewController-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FGPagedTableViewController-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		A12A6D0615CC86950007B7C7 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		A12A6D0715CC86950007B7C7 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		A12A6D0D15CC86B50007B7C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		A12A6D1015CC86ED0007B7C7 /* FGPagedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGPagedTableViewController.h; sourceTree = "<group>"; };
+		A12A6D1115CC86ED0007B7C7 /* FGPagedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGPagedTableViewController.m; sourceTree = "<group>"; };
+		A12A6D1A15CC86ED0007B7C7 /* PageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageInfo.h; sourceTree = "<group>"; };
+		A12A6D1B15CC86ED0007B7C7 /* PageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageInfo.m; sourceTree = "<group>"; };
+		A12A6D2415CC87A10007B7C7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		A12A6D2615CC87D90007B7C7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A12A6D2715CC87D90007B7C7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A12C0C5A15DB19310094FB23 /* FGPagedTableViewController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FGPagedTableViewController.podspec; path = ../FGPagedTableViewController.podspec; sourceTree = "<group>"; };
+		A12C0C5B15DB19310094FB23 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A12C0C5C15DB19310094FB23 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A177699815D9D90A00ACE28F /* ExamplePseudoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExamplePseudoService.h; sourceTree = "<group>"; };
+		A177699915D9D90A00ACE28F /* ExamplePseudoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamplePseudoService.m; sourceTree = "<group>"; };
+		A17F298D15B4AEE500EE113C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A17F298F15B4AEE500EE113C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A1DE530315BA43080074D875 /* FGPagedTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FGPagedTableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1DE530015BA43080074D875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DE530515BA43080074D875 /* UIKit.framework in Frameworks */,
+				A1DE530615BA43080074D875 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1187F9215D9CBB8007EB959 /* FGStatusTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1187F9315D9CBB8007EB959 /* FGStatusTableViewCell.h */,
+				A1187F9415D9CBB8007EB959 /* FGStatusTableViewCell.m */,
+				A1187F9515D9CBB8007EB959 /* FGStatusTableViewCell.xib */,
+			);
+			path = FGStatusTableViewCell;
+			sourceTree = "<group>";
+		};
+		A12A6D0F15CC86ED0007B7C7 /* FGPagedTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A12A6D1015CC86ED0007B7C7 /* FGPagedTableViewController.h */,
+				A12A6D1115CC86ED0007B7C7 /* FGPagedTableViewController.m */,
+				A12A6D1215CC86ED0007B7C7 /* FGPagingTableViewCell */,
+				A1187F9215D9CBB8007EB959 /* FGStatusTableViewCell */,
+				A12A6D1A15CC86ED0007B7C7 /* PageInfo.h */,
+				A12A6D1B15CC86ED0007B7C7 /* PageInfo.m */,
+			);
+			name = FGPagedTableViewController;
+			path = ../FGPagedTableViewController;
+			sourceTree = "<group>";
+		};
+		A12A6D1215CC86ED0007B7C7 /* FGPagingTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A1187F8D15D9CB96007EB959 /* FGPagingTableViewCell.h */,
+				A1187F8E15D9CB96007EB959 /* FGPagingTableViewCell.m */,
+				A1187F8F15D9CB96007EB959 /* FGPagingTableViewCell.xib */,
+			);
+			path = FGPagingTableViewCell;
+			sourceTree = "<group>";
+		};
+		A12C0C5515DB14640094FB23 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				A177699C15D9EFDC00ACE28F /* Example Pseudo Service */,
+				A12A6D2615CC87D90007B7C7 /* AppDelegate.h */,
+				A12A6D2715CC87D90007B7C7 /* AppDelegate.m */,
+				A12A6D0615CC86950007B7C7 /* MainTableViewController.h */,
+				A12A6D0715CC86950007B7C7 /* MainTableViewController.m */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
+		A177699C15D9EFDC00ACE28F /* Example Pseudo Service */ = {
+			isa = PBXGroup;
+			children = (
+				A177699815D9D90A00ACE28F /* ExamplePseudoService.h */,
+				A177699915D9D90A00ACE28F /* ExamplePseudoService.m */,
+			);
+			name = "Example Pseudo Service";
+			sourceTree = "<group>";
+		};
+		A17F297E15B4AEE500EE113C = {
+			isa = PBXGroup;
+			children = (
+				A12C0C5515DB14640094FB23 /* Example */,
+				A12A6D0F15CC86ED0007B7C7 /* FGPagedTableViewController */,
+				A17F299415B4AEE500EE113C /* Supporting Files */,
+				A17F298C15B4AEE500EE113C /* Frameworks */,
+				A17F298A15B4AEE500EE113C /* Products */,
+				A12C0C5A15DB19310094FB23 /* FGPagedTableViewController.podspec */,
+				A12C0C5B15DB19310094FB23 /* LICENSE */,
+				A12C0C5C15DB19310094FB23 /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		A17F298A15B4AEE500EE113C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1DE530315BA43080074D875 /* FGPagedTableViewController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A17F298C15B4AEE500EE113C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A17F298D15B4AEE500EE113C /* UIKit.framework */,
+				A17F298F15B4AEE500EE113C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A17F299415B4AEE500EE113C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A12A6D2415CC87A10007B7C7 /* main.m */,
+				A12A6D0C15CC86B50007B7C7 /* InfoPlist.strings */,
+				A12A6D0415CC86950007B7C7 /* FGPagedTableViewController-Info.plist */,
+				A12A6D0515CC86950007B7C7 /* FGPagedTableViewController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = FGPagedTableViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1DE530215BA43080074D875 /* FGPagedTableViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1DE532815BA43080074D875 /* Build configuration list for PBXNativeTarget "FGPagedTableViewController" */;
+			buildPhases = (
+				A1DE52FF15BA43080074D875 /* Sources */,
+				A1DE530015BA43080074D875 /* Frameworks */,
+				A1DE530115BA43080074D875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FGPagedTableViewController;
+			productName = FGPagedTableViewControllerExample;
+			productReference = A1DE530315BA43080074D875 /* FGPagedTableViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A17F298015B4AEE500EE113C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Andrew Michaelson";
+			};
+			buildConfigurationList = A17F298315B4AEE500EE113C /* Build configuration list for PBXProject "FGPagedTableViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A17F297E15B4AEE500EE113C;
+			productRefGroup = A17F298A15B4AEE500EE113C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1DE530215BA43080074D875 /* FGPagedTableViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1DE530115BA43080074D875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12A6D0E15CC86B50007B7C7 /* InfoPlist.strings in Resources */,
+				A1187F9115D9CB96007EB959 /* FGPagingTableViewCell.xib in Resources */,
+				A1187F9715D9CBB8007EB959 /* FGStatusTableViewCell.xib in Resources */,
+				A12C0C5D15DB19310094FB23 /* FGPagedTableViewController.podspec in Resources */,
+				A12C0C5E15DB19310094FB23 /* LICENSE in Resources */,
+				A12C0C5F15DB19310094FB23 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1DE52FF15BA43080074D875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12A6D0B15CC86950007B7C7 /* MainTableViewController.m in Sources */,
+				A12A6D1C15CC86ED0007B7C7 /* FGPagedTableViewController.m in Sources */,
+				A12A6D2115CC86ED0007B7C7 /* PageInfo.m in Sources */,
+				A12A6D2515CC87A10007B7C7 /* main.m in Sources */,
+				A12A6D2815CC87D90007B7C7 /* AppDelegate.m in Sources */,
+				A1187F9015D9CB96007EB959 /* FGPagingTableViewCell.m in Sources */,
+				A1187F9615D9CBB8007EB959 /* FGStatusTableViewCell.m in Sources */,
+				A177699A15D9D90A00ACE28F /* ExamplePseudoService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A12A6D0C15CC86B50007B7C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A12A6D0D15CC86B50007B7C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A17F29B415B4AEE500EE113C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A17F29B515B4AEE500EE113C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1DE532915BA43080074D875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FGPagedTableViewController-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/FGPagedTableViewController-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A1DE532A15BA43080074D875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FGPagedTableViewController-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/FGPagedTableViewController-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A17F298315B4AEE500EE113C /* Build configuration list for PBXProject "FGPagedTableViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17F29B415B4AEE500EE113C /* Debug */,
+				A17F29B515B4AEE500EE113C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1DE532815BA43080074D875 /* Build configuration list for PBXNativeTarget "FGPagedTableViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1DE532915BA43080074D875 /* Debug */,
+				A1DE532A15BA43080074D875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A17F298015B4AEE500EE113C /* Project object */;
+}
