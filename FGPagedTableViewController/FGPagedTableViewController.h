@@ -81,6 +81,12 @@ typedef enum : NSInteger {
 /** @name Managing the Paging of the Table View */
 
 /**
+Returns the paging cell if visible, otherwise returns nil. (read-only)
+*/
+@property (nonatomic, strong, readonly) FGPagingTableViewCell *pagingCell;
+
+
+/**
  Object that encapsulates the paging data.
  
  This object should be updated every time data is added or removed from the data source.
@@ -90,6 +96,12 @@ typedef enum : NSInteger {
 @property (nonatomic, strong) FGPageInfo *pageInfo;
 
 /** @name Managing the Paging of the Table View */
+
+/**
+ Returns the status cell if visible, otherwise returns nil. (read-only)
+ */
+@property (nonatomic, strong, readonly) FGStatusTableViewCell *statusCell;
+
 
 /**
  Shows a Paging cell of the specified type

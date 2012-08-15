@@ -24,8 +24,8 @@
 #import "FGPagedTableViewController.h"
 
 @interface FGPagedTableViewController ()
-@property (nonatomic, strong) FGStatusTableViewCell *statusCell;
-@property (nonatomic, strong) FGPagingTableViewCell *pagingCell;
+@property (nonatomic, strong, readwrite) FGStatusTableViewCell *statusCell;
+@property (nonatomic, strong, readwrite) FGPagingTableViewCell *pagingCell;
 @end
 
 @implementation FGPagedTableViewController
