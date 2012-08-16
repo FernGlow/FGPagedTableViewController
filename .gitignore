@@ -17,4 +17,5 @@ profile
 DerivedData
 
 # Misc
+.gitignore
 gendoc.sh
