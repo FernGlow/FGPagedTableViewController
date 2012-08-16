@@ -21,9 +21,9 @@
 		A12C0C5E15DB19310094FB23 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A12C0C5B15DB19310094FB23 /* LICENSE */; };
 		A12C0C5F15DB19310094FB23 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A12C0C5C15DB19310094FB23 /* README.md */; };
 		A177699A15D9D90A00ACE28F /* ExamplePseudoService.m in Sources */ = {isa = PBXBuildFile; fileRef = A177699915D9D90A00ACE28F /* ExamplePseudoService.m */; };
+		A1C0F1EA15DC6FF700A303D4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A1C0F1E915DC6FF700A303D4 /* .gitignore */; };
 		A1DE530515BA43080074D875 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17F298D15B4AEE500EE113C /* UIKit.framework */; };
 		A1DE530615BA43080074D875 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17F298F15B4AEE500EE113C /* Foundation.framework */; };
-		A1E0CFD815DB5AA4005F3F00 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A1E0CFD715DB5AA4005F3F00 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,8 +52,8 @@
 		A177699915D9D90A00ACE28F /* ExamplePseudoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExamplePseudoService.m; sourceTree = "<group>"; };
 		A17F298D15B4AEE500EE113C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A17F298F15B4AEE500EE113C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A1C0F1E915DC6FF700A303D4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
 		A1DE530315BA43080074D875 /* FGPagedTableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FGPagedTableViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1E0CFD715DB5AA4005F3F00 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,10 +132,10 @@
 				A17F299415B4AEE500EE113C /* Supporting Files */,
 				A17F298C15B4AEE500EE113C /* Frameworks */,
 				A17F298A15B4AEE500EE113C /* Products */,
-				A1E0CFD715DB5AA4005F3F00 /* .gitignore */,
 				A12C0C5A15DB19310094FB23 /* FGPagedTableViewController.podspec */,
 				A12C0C5B15DB19310094FB23 /* LICENSE */,
 				A12C0C5C15DB19310094FB23 /* README.md */,
+				A1C0F1E915DC6FF700A303D4 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,7 +225,7 @@
 				A12C0C5D15DB19310094FB23 /* FGPagedTableViewController.podspec in Resources */,
 				A12C0C5E15DB19310094FB23 /* LICENSE in Resources */,
 				A12C0C5F15DB19310094FB23 /* README.md in Resources */,
-				A1E0CFD815DB5AA4005F3F00 /* .gitignore in Resources */,
+				A1C0F1EA15DC6FF700A303D4 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,5 +16,5 @@ profile
 *.moved-aside
 DerivedData
 
-# Documentation
-/Documentation
+# Misc
+gendoc.sh
