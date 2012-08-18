@@ -72,25 +72,14 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/ExamplePseudoService/setRequestActive:</TokenIdentifier>
-			<Abstract type="html">Returns whether or not there is a currently active request. (read-only)</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/ExamplePseudoService/isRequestActive</TokenIdentifier>
+			<Abstract type="html">Returns whether or not there is a currently active request.</Abstract>
 			<DeclaredIn>ExamplePseudoService.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign, readonly, getter=isRequestActive) BOOL requestActive</Declaration>
+			<Declaration>- (BOOL)isRequestActive</Declaration>
 			
 			
-			<Anchor>//api/name/requestActive</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/ExamplePseudoService/requestActive</TokenIdentifier>
-			<Abstract type="html">Returns whether or not there is a currently active request. (read-only)</Abstract>
-			<DeclaredIn>ExamplePseudoService.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, assign, readonly, getter=isRequestActive) BOOL requestActive</Declaration>
-			
-			
-			<Anchor>//api/name/requestActive</Anchor>
+			<Anchor>//api/name/isRequestActive</Anchor>
 		</Token>
 		
 	</File>
