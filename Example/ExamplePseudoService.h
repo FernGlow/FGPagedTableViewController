@@ -61,8 +61,8 @@
 
 
 /**
- Returns whether or not there is a currently active request. (read-only)
+ Returns whether or not there is a currently active request.
  */
-@property (nonatomic, assign, readonly, getter = isRequestActive) BOOL requestActive;
+- (BOOL)isRequestActive;
 
 @end
