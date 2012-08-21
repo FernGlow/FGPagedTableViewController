@@ -175,7 +175,7 @@
 		id cell = [self statusCellWithType:self.statusCell.cellType];
 		return cell;
 	} else if (indexPath.section == FGPagedTableViewSectionPaging) {
-		FGStatusTableViewCell *cell = (FGStatusTableViewCell *)[self pagingCellWithType:self.pagingCell.cellType];
+		FGPagingTableViewCell *cell = [self pagingCellWithType:self.pagingCell.cellType];
 		
 		// Continue
 		if (cell.cellType == FGPagingCellTypeContinue || cell.cellType == FGPagingCellTypeRetrieving) {
